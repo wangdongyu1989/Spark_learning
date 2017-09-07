@@ -99,7 +99,14 @@ version := "1.0.0"         // 版本号
 
 scalaVersion := "2.9.3"    // 使用的Scala版本号
 
+libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "1.2.0"
 
+libraryDependencies += "org.eclipse.jetty" % "jetty-server" % "8.1.2.v20120308"                                               
+
+ivyXML :=  
+<dependency org="org.eclipse.jetty.orbit" name="javax.servlet" rev="3.0.0.v201112011016">
+<artifact name="javax.servlet" type="orbit" ext="jar"/>
+</dependency>
 
 
 libraryDependencies += "ch.qos.logback" % "logback-core" % "1.0.0"  
