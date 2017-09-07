@@ -16,8 +16,14 @@ sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的ja
     |--src
     |   |--main
     |   |    |--scala
+    |   |    |--java
+    |   |    |--resources
     |   |--test
     |         |--scala
+    |         |--java
+    |         |--resources
     |--sbt
     |--target
 ```
+
+src/test/scala目录存放scala语言书写的测试代码文件
