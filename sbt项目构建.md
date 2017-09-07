@@ -14,6 +14,7 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
 ```C++
  1 ： tar zxvf sbt-0.13.9.tgz
 ```
+
 ```C++
  2 ：在./sbt目录下面新建文件名为sbt的文本文件 
  $ cd ./sbt
@@ -21,6 +22,15 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
  # 在sbt文本文件中添加如下信息：
    BT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
    java $SBT_OPTS -jar /search/odin/ONLINE/Spark/sbt/bin/sbt-launch.jar "$@" 
+   这里路径需要需改为你自己对应的文件路径，只要能够正确的定位到解压的sbt文件包中的sbt-launch.jar文件即可
+ $ chmod u+x sbt 
+ # 修改sbt文件权限
+```
+```C++
+ 3 ：配置PATH执行环境
+ $ vim ~/.bashrc
+ # 在文件尾部添加如下代码后，保存退出
+ export PATH=/home/zhangchengfei/Tools/sbt/:$PATH
 ```
 
 # sbt项目环境构建：
