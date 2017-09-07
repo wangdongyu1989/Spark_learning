@@ -31,8 +31,28 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
  $ vim ~/.bashrc
  # 在文件尾部添加如下代码后，保存退出
  export PATH=/home/zhangchengfei/Tools/sbt/:$PATH
+ $ source ~/.bashrc # 生效
 ```
 
+```C++
+ 4 ：配置文件的目录在./sbt/conf/sbtconfig.txt
+ # 设置网络代理，在配置中添加：
+ -Dhttp.proxyHost=proxy.zte.com.cn
+ -Dhttp.proxyPort=80
+ # 安装完成后会在用户的根目录生成两个文件夹，sbt工作文件夹.sbt和lvy缓存目录.ivy2，修改默认路径，在配置中添加：
+ -Dsbt.global.base=/search/odin/ONLINE/Spark/sbt/.sbt
+ -Dsbt.ivy.home=/search/odin/ONLINE/Spark/sbt/.ivy2
+ # 注意：上面这种方式修改路径我尝试过并没有成功，网上说需要重启系统才能生效。由于电脑当前状态信息太多（开的应用太多）重启后很难恢复，并且这并不影响实    验结果，所以没有进一步测试验证。
+```
+
+```C++
+  5 : 第一次执行时，会下载一些文件包，然后才能正常使用，要确保联网了，安装成功后显示如下
+  $ sbt sbt-version
+    [info] Set current project to sbt (in build file:/opt/scala/sbt/)
+    [info] 0.13.9
+```
+
+ 
 # sbt项目环境构建：
  
 sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的jar包下载到用户home的.ivy2下面，目录结构如下：
