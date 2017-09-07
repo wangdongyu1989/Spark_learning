@@ -59,7 +59,9 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
     [info] 0.13.9
 ```
 
- 
+# scala下载&安装
+
+
 # sbt项目环境构建：
  
 sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的jar包下载到用户home的.ivy2下面，目录结构如下：
@@ -96,6 +98,9 @@ name := "SimpleProject"    // 项目名称
 version := "1.0.0"         // 版本号
 
 scalaVersion := "2.9.3"    // 使用的Scala版本号
+
+
+
 
 libraryDependencies += "ch.qos.logback" % "logback-core" % "1.0.0"  
 或
