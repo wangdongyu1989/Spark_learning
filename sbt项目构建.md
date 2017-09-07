@@ -9,6 +9,12 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
 
 地址：http://www.scala-sbt.org/download.html
 
+# sbt安装
+
+```C++
+ 1 ： tar zxvf sbt-0.13.9.tgz
+```
+
 
 # sbt项目环境构建：
  
