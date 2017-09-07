@@ -61,6 +61,9 @@ libraryDependencies += groupID % artifactID % revision % configuration
 
 例如：libraryDependencies += "org.apache.spark" %% "spark-core" % "1.6.2" % "provided"
 
+libraryDependencies是指程序的库依赖，最后的provided的意思，spark内已经提供了这几个库，打包时，无需要考虑这几个。
+
+
 # 编译&打包&运行
 
 进入当前目录
