@@ -36,9 +36,17 @@ sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的ja
 
 ```C++
 
-name := "SimpleProject"
+name := "SimpleProject"    // 项目名称
 
-version := "1.0.0"
+version := "1.0.0"         // 版本号
 
-scalaVersion := "2.9.3"  
+scalaVersion := "2.9.3"    // 使用的Scala版本号
+
+libraryDependencies += "ch.qos.logback" % "logback-core" % "1.0.0"  
+或
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.0"  // 添加源代码编译或者运行期间使用的依赖 
+或
+libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "1.0.0",             
+                                 "ch.qos.logback" % "logback-classic" % "1.0.0",                      
+                                 ... )
 ```
