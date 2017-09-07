@@ -51,7 +51,7 @@ libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "
                                  ... )
 ```
 
-# 编译&打包
+# 编译&打包&运行
 
 进入当前目录
 
@@ -60,4 +60,7 @@ libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "
    2:sbt package
 ```
 
+```C++
+   先输入sbt命令，在输入run，就会运行scala项目，如果scala项目中有多个main方法，会询问执行那个
+```
 编译过程，sbt需要上网下载依赖工具包，jna,scala等。编译完成后可以在target/scala-2.9.3/目录下找到打好的jar包。
