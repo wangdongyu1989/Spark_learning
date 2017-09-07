@@ -59,3 +59,5 @@ libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "
    1:sbt compile
    2:sbt package
 ```
+
+编译过程，sbt需要上网下载依赖工具包，jna,scala等。编译完成后可以在target/scala-2.9.3/目录下找到打好的jar包。
