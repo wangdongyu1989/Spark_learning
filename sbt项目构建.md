@@ -54,9 +54,13 @@ libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "
 libraryDependencies格式：
 
 libraryDependencies += groupID % artifactID % revision
+
 或用如下申明，其中configuration是一个字符串或者一个配置维度实例
+
 libraryDependencies += groupID % artifactID % revision % configuration
+
 例如：libraryDependencies += "org.apache.spark" %% "spark-core" % "1.6.2" % "provided"
+
 # 编译&打包&运行
 
 进入当前目录
