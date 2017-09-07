@@ -50,3 +50,12 @@ libraryDependencies ++= Seq(     "ch.qos.logback" % "logback-core" % "
                                  "ch.qos.logback" % "logback-classic" % "1.0.0",                      
                                  ... )
 ```
+
+# 编译&打包
+
+进入当前目录
+
+```C++
+   1:sbt compile
+   2:sbt package
+```
