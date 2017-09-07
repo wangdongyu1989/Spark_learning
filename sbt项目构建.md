@@ -31,3 +31,14 @@ sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的ja
 * src/test/java目录存放Java语言书写的测试代码文件
 * src/test/resources目录存放测试起见使用到的资源文件
 * src/test/scala目录存放scala语言书写的测试代码文件
+
+# build.sbt详解
+
+```C++
+
+name := "SimpleProject"
+
+version := "1.0.0"
+
+scalaVersion := "2.9.3"  
+```
