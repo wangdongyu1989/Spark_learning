@@ -25,5 +25,9 @@ sbt编译需要固定的目录格式，并且需要联网，sbt会将依赖的ja
     |--sbt
     |--target
 ```
-
-src/test/scala目录存放scala语言书写的测试代码文件
+* src/main/java目录存放Java源代码文件
+* src/main/resources目录存放相应的资源文件
+* src/main/scala目录存放Scala源代码文件
+* src/test/java目录存放Java语言书写的测试代码文件
+* src/test/resources目录存放测试起见使用到的资源文件
+* src/test/scala目录存放scala语言书写的测试代码文件
