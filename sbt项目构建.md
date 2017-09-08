@@ -61,6 +61,12 @@ sbt是一个代码编译工具，是scala界的mvn，可以编译scala,java等�
 
 # scala下载&安装
 
+```C++
+   1: 下载scala压缩包 http://www.scala-lang.org/download/
+   2: 建立目录，解压文件到所建立目录 sudo mkdir /opt/scala | sudo tar zxvf scala-2.11.2.tgz -C /opt/scala
+   3: 添加环境变量 vim ~/.bashrc | export PATH=/opt/scala/scala-2.11.2/bin:$PATH | export SCALA_HOME=/opt/scala/scala-2.11.2 
+   4: 测试 scala -version
+```
 
 # sbt项目环境构建：
  
