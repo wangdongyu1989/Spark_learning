@@ -153,6 +153,11 @@ libraryDependencies是指程序的库依赖，最后的provided的意思，spark
 编译过程，sbt需要上网下载依赖工具包，jna,scala等。编译完成后可以在target/scala-2.9.3/目录下找到打好的jar包。
 
 
+# 注意事项
+
+  1，sbt版本，scala版本，java版本三者的依赖关系scala2-12-3依赖java8
+  2，最好自己安装执行程序，yum install安装有时候很难升级，配置。
+
 # 参考：
 
     1：http://blog.csdn.net/zcf1002797280/article/details/49677881
